@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Programming</title>
+</head>
+
+<body>
+    
+    <h1 id="subject"></h1>
+    <h2 id="name"></h2>
+    <h2 id="section"></h2>
+    <h2 id="difference"></h2>
+    <h2 id="combine"></h2>
+
+    <script>
+        function Subject() {
+            return "Computer Programming";
+        }
+        function Name() {
+            return "Kurvy Leynes";
+        }
+        function Section() {
+            return "ICT BILLGATES";
+        }
+        function Difference(x, y) {
+            return x - y;
+        }
+        var NameCombine = {
+            fName: "Jose",
+            lName: "Rizal",
+        Combine: function() {
+            return this.fName + " " + this.lName;
+        }
+    }
+        document.getElementById("subject").innerHTML = Subject();
+        document.getElementById("name").innerHTML = Name();
+        document.getElementById("section").innerHTML = Section();
+        document.getElementById("difference").innerHTML = Difference(11, 12);
+        document.getElementById("combine").innerHTML = NameCombine.Combine();
+
+
+    </script>
+</body>
+</html>
